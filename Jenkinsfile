@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git 'https://github.com/poside/JenkinsTest.git'
-            }
+                git branch: 'main', url: 'https://github.com/poside/JenkinsTest.git'            }
         }
 
         stage('OWASP DependencyCheck') {
