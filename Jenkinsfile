@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout SCM') {
             steps {
-                git 'https://github.com/poside/JenkinsDep.git'
+                git 'https://github.com/poside/JenkinsTest.git'
             }
         }
 
